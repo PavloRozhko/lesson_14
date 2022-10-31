@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 14 - Flex</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			Хедер
+		</header>
+		<main class="page">
+			<div class="page__containert">
+				<div class="block">
+					<div class="block__content">
+						<div class="block__items">
+							<div class="block__item">1</div>
+							<div class="block__item">2</div>
+							<div class="block__item">3</div>
+							<div class="block__item">4</div>
+						</div>
+					</div>
+					<div class="block__content column">
+						<div class="column__items">
+							<div class="column__item">
+								<div class="column__content">Колонка #1</div>
+							</div>
+							<div class="column__item">
+								<div class="column__content">Колонка #2</div>
+							</div>
+							<div class="column__item">
+								<div class="column__content">Колонка #3</div>
+							</div>
+							<div class="column__item">
+								<div class="column__content">Колонка #4</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__content text-block">
+						<div class="text-block__content">
+							<h2 class="text-block__title">Черкаська область</h2>
+							<a class="text-block__link" href="https://ck-oda.gov.ua/" target="_blank">Офіційний сайт Черкаської
+								обласної
+								адміністрації</a>
+							<p class="text-block__text">Черка́ська о́бласть (Черкащина) — адміністративно-територіальна одиниця
+								України
+								першого рівня, розташована у центральній
+								лісостеповій частині країни по обидва берега середньої течії Дніпра та Південного Бугу.</p>
+							<img class="text-block__image" src="img/Cherkasy.svg" alt="Черкаська область">
+						</div>
+					</div>
+					<div class="block__content cards">
+						<div class="cards__header">Hetman shop</div>
+						<div class="cards__items">
+							<div class="cards__item">
+								<div class="cards__content">
+									<h2 class="cards__title">Сивочолий гетьман</h2>
+									<div class="cards__image">
+										<img src="img/ppo-merch-1.png" alt="Мерч 1">
+									</div>
+									<div class="cards__text">
+										Футболка "сивочолий гетьман перемоги". На 101% виконана із перероблених матеріалів. Ідеально підійде
+										для будь-якого свята. Має 8 сатандартних
+										розмірів.
+									</div>
+									<a class="cards__button" href="#">Купити цю!</a>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__content">
+									<h2 class="cards__title">Захід нас зливає</h2>
+									<div class="cards__image">
+										<img src="img/ppo-merch-2.png" alt="Мерч 2">
+									</div>
+									<div class="cards__text">
+										Футболка "Захід нас зливає". На 103% виконана із натуральних матеріалів, в т.ч. 2% бавовни із
+										бєлгорода. Підійде поціновувачам тонкого гумору.
+									</div>
+									<a class="cards__button" href="#">Купити цю!</a>
+								</div>
+							</div>
+							<div class="cards__item">
+								<div class="cards__content">
+									<h2 class="cards__title">Моя каденція!</h2>
+									<div class="cards__image">
+										<img src="img/ppo-merch-3.png" alt="Мерч 2">
+									</div>
+									<div class="cards__text">Футболка "За моєї каденції такого не було". На 99% складається з відмазок і
+										на
+										1% із бавовни. Напис на фтуболці виконаний Азбукою Морзе. Ідеальгнго підійде, якщо вам потрібно
+										повідомити співрозмовнику, що ви ні в чому не винні!</div>
+									<a class="cards__button" href="#">Купити цю!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__content">
+						<div class="block__link">
+							<a href="#" class="">
+								Подати заявку на вступ до пратії.
+							</a>
+						</div>
+					</div>
+					<div class="block__content">
+						<div class="block__box box">
+							<div class="box__content">
+								<div class="box__image">
+									<img src="img/Cherkasy.svg" alt="Черкаси">
+								</div>
+								<div class="box__text">Область на півночі межує з Київською, на півдні з Кіровоградською, на сході з
+									Полтавською та з Вінницькою областю на
+									заході. Простягнулася із південного заходу на північний схід на 245 км, із півночі на південь — на 150
+									км.</div>
+							</div>
+							<div class="box__content">
+								<div class="box__image">
+									<img src="img/Kirovohrad.svg" alt="Кіровоградщина">
+								</div>
+								<div class="box__text">Кіровогра́дська о́бласть (Кіровоградщина)— область у центральній частині України.
+									Утворена 10 січня 1939 року, обласний
+									центр — Кропивницький.</div>
+							</div>
+							<div class="box__content">
+								<div class="box__image">
+									<img src="img/Poltava.svg" alt="Полтавщина">
+								</div>
+								<div class="box__text">Полта́вська о́бласть (Полтавщина) — адміністративно-територіальна одиниця України
+									з центром у місті Полтава. Утворена 22
+									вересня 1937 року. Розташована у середній частині Лівобережної України і, частково, на Правобережній
+									Україні. Більша
+									частина області лежить у межах Придніпровської низовини та Полтавської рівнини.</div>
+							</div>
+							<div class="box__content">
+								<div class="box__image">
+									<img src="img/Vinnytsia.svg" alt="Вінниччина">
+								</div>
+								<div class="box__text">Ві́нницька о́бласть (Вінниччина) — область у Центральній Україні. Населення
+									становить 1,6 млн осіб (2018 р.).
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			Футер
+		</footer>
+	</div>
+</body>
+</html>

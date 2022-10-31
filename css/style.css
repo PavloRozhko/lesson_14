@@ -1,0 +1,226 @@
+/* 
+to connect fonts at the end of the code add: &display=swap 
+font should be connected after reset.css and before styles
+*/
+@import "reset.css";
+/* ========================================================================== */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #134f5c;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.header,
+.footer {
+	padding: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.header {
+	background-color: #FFE4E1;
+}
+.page {
+	flex: 1 0 auto;
+}
+.footer{
+	background-color: #243068;
+	color: #fff;
+}
+/* ========================================================================== */
+[class*="__container"]{
+	max-width: 1350px;
+	margin: 0 auto;
+}
+.block__content {
+	background-color: #DF2B52;
+	padding: 30px;
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+}
+.block__content:not(:last-child){
+	margin-bottom: 25px;
+}
+/* flex-container */
+.block__items {
+	background-color: #DF8A44;
+	padding: 20px;
+	border: 5px solid #fff;
+	display: flex;
+	/* justify-content: flex-start; */
+	/* justify-content: flex-end; */
+	justify-content: center;
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly; */
+	/* flex-wrap: nowrap; */
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+	flex-direction: row-reverse;
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
+	/* align-items: flex-start; */
+	align-items: center;
+	/* align-items: flex-end; */
+	/* align-items: stretch; */
+	gap:10px;
+	/* column-gap: 10px; */
+	/* row-gap: 10px; */
+}
+/* flex-element */
+.block__item {
+	background-color: #443826;
+	padding: 15px;
+	border: 5px solid #af877a;
+}
+.block__item:nth-child(3){
+	align-self: stretch;
+	/* align-self: flex-start; */
+	/* align-self: flex-end; */
+}
+
+.block__item:nth-child(1) {
+	/* flex: 0 0 200px; */
+	/* flex: 1 0 200px; */
+	/* flex: 0 1 200px; */
+	/* flex: 1 1 200px; */
+	flex: 0 1 50%;
+}
+/* ========================================================================== */
+.column__items {
+	/* background-color: #fff; */
+	display: flex;
+	/* gap: 15px; */
+	margin: 0 -10px;
+	flex-wrap: wrap;
+}
+.column__item {
+	flex: 1 0 25%;
+	padding: 0 5px;
+}
+.column__content {
+	background-color: #243068;
+	padding: 15px;
+}
+/* ========================================================================== */
+.text-block__content {
+	text-align: left;
+	padding: 30px;
+	background: #99AAB5;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.text-block__link {
+	color: #7289da;
+	transition: all 0.3s ease 0s;
+}
+.text-block__link:hover{
+	color: #485fb3;
+	text-decoration: underline;
+}
+.text-block__image {
+	max-width: 300px;
+}
+/* ========================================================================== */
+.cards__header{
+	margin-bottom: 15px;
+}
+.cards__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+.cards__item {
+	flex: 1 0 33.333%;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+.cards__content {
+	padding: 15px;
+	background-color: #8D5524;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	min-height: 100%;
+}
+.cards__title {
+	text-transform: uppercase;
+}
+.cards__image {
+	background-color: #fff;
+	border-radius: 5px;
+}
+.cards__text {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	flex: 1 0 auto;
+}
+.cards__button {
+	align-self: flex-start;
+	padding: 15px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #f1c27d;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+}
+.cards__button:hover{
+	background-color: #cfaa72;
+}
+/* ========================================================================== */
+.block__link {
+	text-align: left;
+	font-size: 16px;
+}
+.block__link a {
+	color: #DF8A44;
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+}
+.block__link a::before{
+	content: "";
+	flex: 0 0 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+/* ========================================================================== */
+.box {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+}
+.box__content {
+	display: flex;
+	background-color: #7289da;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;
+
+}
+.box__content:nth-child(even){
+	flex-direction: row-reverse;
+}
+.box__image {
+	flex: 1 0 50%;
+}
+.box__image img {
+	width: 300px;
+}
+.box__text {
+	flex: 1 0 50%;
+	text-align: start;
+}
