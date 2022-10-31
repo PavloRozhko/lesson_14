@@ -94,9 +94,7 @@ body{
 }
 /* ========================================================================== */
 .column__items {
-	/* background-color: #fff; */
 	display: flex;
-	/* gap: 15px; */
 	margin: 0 -10px;
 	flex-wrap: wrap;
 }
@@ -200,16 +198,16 @@ body{
 .box {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 15px;
-
 }
 .box__content {
 	display: flex;
-	background-color: #7289da;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 20px;
 	border-radius: 5px;
-
+	background-color: #7289da;
 }
 .box__content:nth-child(even){
 	flex-direction: row-reverse;
